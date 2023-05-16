@@ -11,7 +11,7 @@ pub struct Tasks {
 #[derive(Debug, Deserialize, Serialize)]
 pub struct Commands {
     pub build_file: String,
-    pub tasks: Tasks,
+    pub task: Tasks,
 }
 
 #[derive(Debug, Deserialize, Serialize)]

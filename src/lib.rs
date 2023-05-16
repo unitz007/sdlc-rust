@@ -6,7 +6,7 @@ use std::io::Read;
 
 pub fn read_json(path: &str) -> String {
 
-    let mut file = File::open(path.to_string() + "sdlc.json")
+    let mut file = File::open(path.to_string() + "sdlc-config.json")
         .expect("configuration file not found");
 
     let mut json_content = String::new();

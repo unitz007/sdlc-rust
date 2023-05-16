@@ -43,9 +43,9 @@ fn main() -> Result<(), Error> {
         for f in read_dir(&current_directory).unwrap() {
             let file = f.unwrap().file_name().into_string().unwrap();
             if file.eq(build_file) {
-                program = &command.tasks.program;
+                program = &command.task.program;
                 let arg = &args[0];
-                com = sdlc::get_task(arg, &command.tasks);
+                com = sdlc::get_task(arg, &command.task);
             }
         }
     }
